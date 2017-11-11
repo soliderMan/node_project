@@ -1,0 +1,41 @@
+git  branch   查看分支
+git  branch dev   加了名字就是创建一个dev的分支
+git  branch    此时就会看到master 和dev 两个分支
+git  checkout  +分支名  切换分支名
+git  branch -D +分支名   删除分支
+删除分支时 当前用户不能在要删除的分支上
+git checkout -b +分知名   创建并切换分支名
+只有添加文件到历史区 此时两个分支才没有关系了
+
+git  stash 暂存文件
+分支有更改不能直接切换，可以提交更改或者暂存更改，暂存使用过度区覆盖掉工作区
+git stash pop 还原暂存的内容
+
+当把文件删了 想从暂存区拿回来就是
+git merge  +文件名 合并分支
+echo hello > 1.txt  就是往1.txt里写入hello 如果两个>>表示追加
+rm  1.txt 删除文件
+
+
+/////////////////////////////////////////
+github
+1.touch README.md 创建一个md的项目描述文件
+2.git init
+3. 创建一个 .gitignore  忽略文件 上传到GitHub上 这个文件夹自动会被忽略
+注意：git不会上传空文件夹
+4.gitkeep在空文件夹内
+
+关联远程仓库
+git remote add origin(自定义的名字) +地址 如果写错了 就删了 git remote rm +名字
+git remote -v 查看下远程仓库
+
+
+往上传 git push origin master
+
+如果线上改了index.js里文件 我线下也需要改
+git pull origin master 拉去最新的代码 他会先把线上的代码拉过来 自动fetch +merge
+
+gh-pages分支来发布我们的静态页
+- 在项目中创建一个gh-pages的分支
+- 将分支提到线上仓库
+-找到提供
