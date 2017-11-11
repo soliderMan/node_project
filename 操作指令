@@ -38,4 +38,25 @@ git pull origin master 拉去最新的代码 他会先把线上的代码拉过�
 gh-pages分支来发布我们的静态页
 - 在项目中创建一个gh-pages的分支
 - 将分支提到线上仓库
--找到提供
+-找到提供给你的网站settings 里
+```
+git checkout -b gh-pages
+touch index.html
+git add .
+git commit -m '自定义'
+git push origin gh-pages
+```
+
+issue 问题
+- 可以提交对项目和自己的信息
+
+更改别人代码
+首先 fork 变成自己的
+然后拉取到本地 复制地址 git clone +地址
+clone 后的默认就是git仓库而且有origin地址，可以将代码提交到自己的仓库上
+
+mv my-my ~/Desktop/  把my-my 移动到桌面
+collabrators 添加贡献者 添加之后有最大权限修改代码
+
+
+GUI界面化
